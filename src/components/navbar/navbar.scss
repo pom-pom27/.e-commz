@@ -8,6 +8,11 @@
     cursor: pointer;
     color: black;
   }
+  a,
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .navbar-item {

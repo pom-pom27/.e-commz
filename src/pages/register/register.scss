@@ -1,0 +1,62 @@
+.register {
+  height: 100vh;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    center / cover
+      url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+
+  .register-box {
+    background-color: white;
+
+    padding: 2rem;
+    width: 50%;
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    & > input {
+      flex: 1;
+      min-width: 40%;
+      height: 4rem;
+      padding: 1rem;
+
+      @media screen and (max-width: 600px) {
+        min-width: 100%;
+      }
+    }
+    p {
+      margin: 1rem 0;
+    }
+
+    input[type="button"] {
+      padding: 1rem 2rem;
+      background-color: teal;
+      border: none;
+      color: white;
+      flex: 0;
+      width: 4rem;
+      cursor: pointer;
+    }
+
+    // .checkbox {
+    //   display: flex;
+    //   align-items: center;
+    // }
+    // input[type="checkbox"] {
+    //   margin-right: 1rem;
+    // }
+  }
+}

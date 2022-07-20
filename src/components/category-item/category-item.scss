@@ -1,0 +1,47 @@
+.category-item {
+  flex: 1;
+  height: 50rem;
+  position: relative;
+  cursor: pointer;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .detail {
+    width: 80%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .title {
+      display: inline;
+      padding: 1rem;
+      letter-spacing: 2px;
+      background-color: white;
+      color: black;
+    }
+
+    button {
+      //   width: 90%;
+      margin-top: 1rem;
+      padding: 1rem;
+      border: none;
+      height: 4rem;
+      background-color: white;
+      font-size: 1.4rem;
+    }
+  }
+
+  &:hover {
+    .title {
+      background-color: black;
+      color: white;
+    }
+  }
+}

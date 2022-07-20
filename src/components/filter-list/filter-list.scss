@@ -1,0 +1,41 @@
+.filter-list {
+  .filter {
+    padding: 4rem 4rem 0 4rem;
+    h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 4rem;
+      //   text-align: center;
+      margin-right: 1rem;
+    }
+  }
+  .filter-row {
+    height: 3rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      margin-right: 1rem;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
+
+  .filter-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    select {
+      margin-right: 1rem;
+      height: 100%;
+      option {
+        font-size: 1.6rem;
+      }
+    }
+
+    .sort-select {
+      margin: 0;
+    }
+  }
+}

@@ -7,7 +7,7 @@ const Navbar: React.FC<INavbar> = () => {
   return (
     <nav className="navbar">
       <div className="navbar-item left">
-        <span>EN</span>
+        <a href="#">EN</a>
         <div className="search">
           <input type="text" placeholder="Search product" />
           <Search className="icon search-icon" />

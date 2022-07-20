@@ -24,7 +24,7 @@ const Slider: React.FC<ISlider> = () => {
 
     sliderRef.current!.style.transform = `translateX(${
       slideNumber.current * -100
-    }vw)`;
+    }%)`;
   };
 
   return (
