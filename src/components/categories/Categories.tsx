@@ -6,6 +6,7 @@ interface ICategories {}
 const Categories: React.FC<ICategories> = () => {
   return (
     <div className="categories">
+      <h2 className="categories-title">Categories</h2>
       {categories.map((category) => (
         <CategoryItem {...category} />
       ))}

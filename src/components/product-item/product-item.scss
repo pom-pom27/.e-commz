@@ -8,6 +8,10 @@
   position: relative;
   transition: all 500ms ease;
 
+  @media screen and (max-width: 1024px) {
+    padding: 0.5rem;
+  }
+
   .product-wrapper {
     position: relative;
     display: flex;

@@ -1,14 +1,10 @@
-import "./App.css";
-import Footer from "./components/footer/Footer";
-import CartPage from "./pages/cart-page/CartPage";
+import Home from "./pages/home/Home";
 interface IApp {}
 
 const App: React.FC<IApp> = () => {
   return (
     <div>
-      <CartPage />
-
-      <Footer />
+      <Home />
     </div>
   );
 };

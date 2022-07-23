@@ -5,6 +5,18 @@
   // gap: 1rem;
   justify-content: flex-start;
 
+  @media screen and (max-width: 1024px) {
+    margin: 3rem 2rem;
+  }
+
+  .products-title {
+    text-align: center;
+    width: 100%;
+    text-decoration: underline;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
   img {
     height: 75%;
   }

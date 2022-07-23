@@ -3,6 +3,9 @@
   height: 60vh;
   position: relative;
   overflow: hidden;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 
   .slider-wrapper {
     transition: all 1s ease;

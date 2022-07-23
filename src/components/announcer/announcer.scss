@@ -1,9 +1,13 @@
 .anno {
-  height: 3rem;
   background-color: teal;
+  padding: 0.3rem;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.7rem;
+
+  @media screen and (max-width: 576px) {
+    font-size: 1.6rem;
+  }
 }

@@ -15,7 +15,7 @@ const Home: React.FC<IHome> = () => {
       <Navbar />
       <Slider />
       <Categories />
-      <Products />
+      <Products withTitle="Popular" />
       <Newsletter />
       <Footer />
     </div>

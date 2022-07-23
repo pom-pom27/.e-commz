@@ -20,10 +20,10 @@ const Navbar: React.FC<INavbar> = () => {
         <a href="#" className="link">
           REGISTER
         </a>
-        <a href="#" className="link">
+        <a href="#" className="link signin">
           SIGN IN
         </a>
-        <IconButton aria-label="cart">
+        <IconButton className="icon-button" aria-label="cart">
           <Badge badgeContent={4} className="badge" color="primary">
             <ShoppingCartOutlined className="icon" />
           </Badge>
