@@ -8,7 +8,7 @@ const Categories: React.FC<ICategories> = () => {
     <div className="categories">
       <h2 className="categories-title">Categories</h2>
       {categories.map((category) => (
-        <CategoryItem {...category} />
+        <CategoryItem key={category.id} {...category} />
       ))}
     </div>
   );

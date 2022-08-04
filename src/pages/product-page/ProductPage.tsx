@@ -1,6 +1,4 @@
-import Announcer from "../../components/announcer/Announcer";
-import Footer from "../../components/footer/Footer";
-import Navbar from "../../components/navbar/Navbar";
+import Newsletter from "../../components/newsletter/Newsletter";
 import Product from "../../components/product/Product";
 import "./product-page.scss";
 interface IProductPage {}
@@ -8,10 +6,8 @@ interface IProductPage {}
 const ProductPage: React.FC<IProductPage> = () => {
   return (
     <div className="product-page">
-      <Navbar />
-      <Announcer />
       <Product />
-      <Footer />
+      <Newsletter />
     </div>
   );
 };

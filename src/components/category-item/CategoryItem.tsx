@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./category-item.scss";
 interface ICategoryItem {
   id: number;
@@ -8,10 +9,12 @@ interface ICategoryItem {
 const CategoryItem: React.FC<ICategoryItem> = ({ id, title, img }) => {
   return (
     <div className="category-item">
-      <img loading="lazy" src={img} alt={`${title} image`} />
-      <div className="detail">
-        <h2 className="title">{title}</h2>
-      </div>
+      <Link to="products">
+        <img loading="lazy" src={img} alt={`${title} image`} />
+        <div className="detail">
+          <h2 className="title">{title}</h2>
+        </div>
+      </Link>
     </div>
   );
 };

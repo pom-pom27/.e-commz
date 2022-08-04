@@ -1,25 +1,19 @@
-import Announcer from "../../components/announcer/Announcer";
 import Categories from "../../components/categories/Categories";
-import Footer from "../../components/footer/Footer";
-import Navbar from "../../components/navbar/Navbar";
 import Newsletter from "../../components/newsletter/Newsletter";
 import Products from "../../components/products/Products";
 import Slider from "../../components/slider/Slider";
-import "./home.scss";
-interface IHome {}
+import styles from "./homepage.module.scss";
+interface IHomepage {}
 
-const Home: React.FC<IHome> = () => {
+const Homepage = ({}: IHomepage) => {
   return (
-    <div className="home">
-      <Announcer />
-      <Navbar />
+    <div className={styles.homepage}>
       <Slider />
       <Categories />
       <Products withTitle="Popular" />
       <Newsletter />
-      <Footer />
     </div>
   );
 };
 
-export default Home;
+export default Homepage;
